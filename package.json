@@ -1,6 +1,6 @@
 {
-  "name": "ogov-importer",
-  "version": "1.3.0",
+  "name": "ogov-importer-ci",
+  "version": "1.4.0",
   "description": "Argentina's Congress data importer",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,10 @@
     "extend": "*",
     "tmp": "*",
     "pdf-text-extract": "*",
-    "cheerio": "*"
+    "cheerio": "*",
+    "jschatdet": "*"
   },
-  "author": "seykron",
+  "author": "seykron && martinszy",
   "license": "GPLv2",
   "readmeFilename": "README.md",
   "gitHead": "994dd014b72597fa843179e918a70ec2c06d7c8b"
