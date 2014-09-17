@@ -87,7 +87,8 @@ var importer = new Importer.Klass({
   queryCache: new ogi.FileSystemCache(QUERY_CACHE_DIR),
   storers: [
     inMemoryStorer,
-    new ogi.FileSystemStorer(DATA_DIR, Importer.storerOptions)
+    new ogi.FileSystemStorer(DATA_DIR, Importer.storerOptions),
+    new ogi.PopoloStorer("http://localhost:3000", Importer.storerOptions)
   ]
 });
 
