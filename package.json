@@ -19,7 +19,8 @@
     "tmp": "*",
     "pdf-text-extract": "*",
     "cheerio": "*",
-    "jschardet": "*"
+    "jschardet": "*",
+    "iconv": "*"
   },
   "author": "seykron && martinszy",
   "license": "GPLv2",
