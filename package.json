@@ -19,7 +19,7 @@
     "tmp": "*",
     "pdf-text-extract": "*",
     "cheerio": "*",
-    "jschatdet": "*"
+    "jschardet": "*"
   },
   "author": "seykron && martinszy",
   "license": "GPLv2",
