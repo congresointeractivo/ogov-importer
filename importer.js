@@ -88,13 +88,16 @@ var importer = new Importer.Klass({
   storers: [
     inMemoryStorer,
     new ogi.FileSystemStorer(DATA_DIR, Importer.storerOptions),
-    new ogi.PopoloStorer("http://localhost:3000", Importer.storerOptions)
+    new ogi.PopoloStorer("http://billit", Importer.storerOptions)
   ]
 });
 
 LOG.info("Process PID: " + process.pid);
 LOG.info("Storing data to: " + DATA_DIR);
 
+var start = new Date().getTime();
+
 importer.start(function () {
-  console.log("Imported items: " + inMemoryStorer.getNumberOfItems());
+  console.log("Imported items: " + inMemoryStorer.getNumberOfItems(),
+    "Elapsed time: " + ((new Date().getTime() - start)) / 1000) + " secs.";
 });
